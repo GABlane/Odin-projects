@@ -1,0 +1,76 @@
+:root {
+  --color-body: rgb(34, 34, 34);
+  --font-color: rgb(207, 207, 207);
+}
+
+body {
+  background-color: var(--color-body);
+  color: var(--font-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  gap: 2vw;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border-style: none;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.box1 {
+  width: 28vw;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg-img {
+  width: 25em; 
+  height: auto;
+  display: block;
+}
+
+#banner-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.title {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-boxes {
+  flex: 1 1 40%;
+  min-width: 150px;
+}
