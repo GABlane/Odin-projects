@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Library</h1>
+        <table id="books-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th id="titles">Titles</th>
+                    <th>Author</th>
+                    <th>N of pages</th>
+                    <th>Read?</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="show-dialog">New book</button>
+        <dialog id="dialog">
+            <form id="book-form" method="dialog">
+                <div class="form-row">
+                    <label for="title">Title:</label>
+                    <input
+                        id="title"
+                        name="title"
+                        placeholder="Name of Book"
+                        type="text"
+                        required
+                    />
+                </div>
+                <div class="form-row">
+                    <label for="author">Author:</label>
+                    <input
+                        id="author"
+                        name="author"
+                        placeholder="Writer"
+                        type="text"
+                        required
+                    />
+                </div>
+                <div class="form-row">
+                    <label for="pages">Pages:</label>
+                    <input
+                        id="pages"
+                        name="pages"
+                        placeholder="number of pages "
+                        type="number"
+                        min="1"
+                        required
+                    />
+                </div>
+
+                <input type="submit" id="submitBtn" value="Add to library" />
+                <input type="button" id="cancelBtn" value="Cancel" />
+            </form>
+        </dialog>
+</body>
+<script src="script.js"></script>
+
+</html>
