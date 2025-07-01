@@ -1,0 +1,15 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    height: auto;
+    width: 200px;
+    gap: 2em;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
