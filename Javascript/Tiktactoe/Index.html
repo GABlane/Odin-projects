@@ -7,8 +7,23 @@
     <title>TictacToe</title>
 </head>
 <body>
-    <button id="player1">Player 1</button>
-    <button id="player2">Player 2</button>
+     <div>
+        <div class="info">
+            <h2>Dynamic Board Creation</h2>
+            <p>Current Player: <span id="current-player">X</span></p>
+            <p id="game-status"></p>
+        </div>
+        
+        <div class="game-container" id="game-container">
+        </div>
+        
+        <div class="info">
+            <button class="restart" id="restart">Restart Game</button>
+        </div>
+    </div>
+    
+
+
 </body>
 <script src="script.js"></script>
 </html>
