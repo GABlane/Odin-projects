@@ -11,8 +11,10 @@ const form = document.getElementById("book-form");
 const table = document.getElementById("books-table");
 const tbody = document.querySelector("#books-table tbody");
 
-    function Book(title, author, pages, status) {
-        if (!new.target) {
+     //making book into a class
+     class Lib{
+        constructor (title, author, pages, status){
+            if (!new.target) {
             throw Error("You must use the 'new' operator to call the constructor");
         }
         this.id = crypto.randomUUID();
@@ -20,11 +22,13 @@ const tbody = document.querySelector("#books-table tbody");
         this.author = author;
         this.pages = pages;
         this.status = status;
+        }
     }
-
-    Book.prototype.toggleStatus = function () {
+    
+    Lib.prototype.toggleStatus = function () {
         this.status = !this.status;
     };
+
 
     function removeBookFromLibrary(id) {
         const index = library.findIndex((book) => {
@@ -35,8 +39,8 @@ const tbody = document.querySelector("#books-table tbody");
     }
 
     function addBookToLibrary(title, author, pages, status) {
-        const book = new Book(title, author, pages, status);
-        library.push(book);
+        const book = new Lib(title, author, pages, status);
+        library.push(book); 
     }
 
     function toggleReadStatus(id) {
