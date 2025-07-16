@@ -1,1 +1,3 @@
-alert("Run webpack serve");
+import "./styles.css";
+
+// alert("Run webpack serve");
