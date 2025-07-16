@@ -72,3 +72,39 @@ header {
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.2);
 }
+#content{
+    font-size: inherit;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#in-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+#title{
+    margin: 1vw;
+    background-color: var(--nav-bg);
+    width: 50vw;
+    border-radius: 2em;
+    border: solid var(--background);
+}
+
+.boxs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40vw;    
+}
+.boxs button{
+    width: 30vw;
+}
